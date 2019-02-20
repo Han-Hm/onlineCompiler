@@ -1,8 +1,11 @@
 function codeEditor(elEditor) {
     this.codeMirror = CodeMirror.fromTextArea(elEditor, {
-        mode: 'java',
-        theme: 'eclipse.css',
-        lineNumbers: true
+        mode: 'text/x-java',
+        smartIndent: true,
+        indentWithTabs: true,
+        lineNumbers: true,
+        tabSize: 4,
+        theme: 'eclipse.css'
     });
 };
 
